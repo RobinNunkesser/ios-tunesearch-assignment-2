@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,15 @@
 		6F51BB5F258AC2DB0037420E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F51BB5E258AC2DB0037420E /* Preview Assets.xcassets */; };
 		6F51BB6A258AC2DB0037420E /* TuneSearchAssignment2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F51BB69258AC2DB0037420E /* TuneSearchAssignment2Tests.swift */; };
 		6F51BB75258AC2DB0037420E /* TuneSearchAssignment2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F51BB74258AC2DB0037420E /* TuneSearchAssignment2UITests.swift */; };
+		6F51BB87258AC3090037420E /* TunesearchMockCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6F51BB86258AC3090037420E /* TunesearchMockCore */; };
+		6F51BB8C258AC3A00037420E /* SearchTermDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F51BB8B258AC3A00037420E /* SearchTermDTO.swift */; };
+		6F51BB91258AC3F90037420E /* CollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F51BB90258AC3F90037420E /* CollectionViewModel.swift */; };
+		6F51BB96258AC4170037420E /* TrackPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F51BB95258AC4170037420E /* TrackPresenter.swift */; };
+		6F51BB9B258AC4310037420E /* TrackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F51BB9A258AC4310037420E /* TrackViewModel.swift */; };
+		6F51BBA1258AC4590037420E /* CollectionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F51BB9F258AC4590037420E /* CollectionsViewModel.swift */; };
+		6F51BBA2258AC4590037420E /* TracksListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F51BBA0258AC4590037420E /* TracksListView.swift */; };
+		6F51BBA7258AC46F0037420E /* TrackRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F51BBA6258AC46F0037420E /* TrackRow.swift */; };
+		6F51BBAD258AC4B10037420E /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 6F51BBAC258AC4B10037420E /* URLImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +54,13 @@
 		6F51BB70258AC2DB0037420E /* TuneSearchAssignment2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuneSearchAssignment2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F51BB74258AC2DB0037420E /* TuneSearchAssignment2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuneSearchAssignment2UITests.swift; sourceTree = "<group>"; };
 		6F51BB76258AC2DB0037420E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F51BB8B258AC3A00037420E /* SearchTermDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTermDTO.swift; sourceTree = "<group>"; };
+		6F51BB90258AC3F90037420E /* CollectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewModel.swift; sourceTree = "<group>"; };
+		6F51BB95258AC4170037420E /* TrackPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackPresenter.swift; sourceTree = "<group>"; };
+		6F51BB9A258AC4310037420E /* TrackViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackViewModel.swift; sourceTree = "<group>"; };
+		6F51BB9F258AC4590037420E /* CollectionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionsViewModel.swift; sourceTree = "<group>"; };
+		6F51BBA0258AC4590037420E /* TracksListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TracksListView.swift; sourceTree = "<group>"; };
+		6F51BBA6258AC46F0037420E /* TrackRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F51BBAD258AC4B10037420E /* URLImage in Frameworks */,
+				6F51BB87258AC3090037420E /* TunesearchMockCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,11 +113,18 @@
 		6F51BB56258AC2D60037420E /* TuneSearchAssignment2 */ = {
 			isa = PBXGroup;
 			children = (
+				6F51BB9F258AC4590037420E /* CollectionsViewModel.swift */,
+				6F51BBA0258AC4590037420E /* TracksListView.swift */,
+				6F51BBA6258AC46F0037420E /* TrackRow.swift */,
+				6F51BB95258AC4170037420E /* TrackPresenter.swift */,
+				6F51BB90258AC3F90037420E /* CollectionViewModel.swift */,
+				6F51BB9A258AC4310037420E /* TrackViewModel.swift */,
 				6F51BB57258AC2D60037420E /* TuneSearchAssignment2App.swift */,
 				6F51BB59258AC2D60037420E /* ContentView.swift */,
 				6F51BB5B258AC2DB0037420E /* Assets.xcassets */,
 				6F51BB60258AC2DB0037420E /* Info.plist */,
 				6F51BB5D258AC2DB0037420E /* Preview Content */,
+				6F51BB8B258AC3A00037420E /* SearchTermDTO.swift */,
 			);
 			path = TuneSearchAssignment2;
 			sourceTree = "<group>";
@@ -146,6 +171,10 @@
 			dependencies = (
 			);
 			name = TuneSearchAssignment2;
+			packageProductDependencies = (
+				6F51BB86258AC3090037420E /* TunesearchMockCore */,
+				6F51BBAC258AC4B10037420E /* URLImage */,
+			);
 			productName = TuneSearchAssignment2;
 			productReference = 6F51BB54258AC2D60037420E /* TuneSearchAssignment2.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +246,10 @@
 				Base,
 			);
 			mainGroup = 6F51BB4B258AC2D60037420E;
+			packageReferences = (
+				6F51BB85258AC3090037420E /* XCRemoteSwiftPackageReference "explicitarchitecture-tunesearch-mockcore-spm" */,
+				6F51BBAB258AC4B10037420E /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = 6F51BB55258AC2D60037420E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,7 +292,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F51BBA7258AC46F0037420E /* TrackRow.swift in Sources */,
+				6F51BB9B258AC4310037420E /* TrackViewModel.swift in Sources */,
+				6F51BB91258AC3F90037420E /* CollectionViewModel.swift in Sources */,
 				6F51BB5A258AC2D60037420E /* ContentView.swift in Sources */,
+				6F51BB96258AC4170037420E /* TrackPresenter.swift in Sources */,
+				6F51BBA1258AC4590037420E /* CollectionsViewModel.swift in Sources */,
+				6F51BB8C258AC3A00037420E /* SearchTermDTO.swift in Sources */,
+				6F51BBA2258AC4590037420E /* TracksListView.swift in Sources */,
 				6F51BB58258AC2D60037420E /* TuneSearchAssignment2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -580,6 +620,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6F51BB85258AC3090037420E /* XCRemoteSwiftPackageReference "explicitarchitecture-tunesearch-mockcore-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RobinNunkesser/explicitarchitecture-tunesearch-mockcore-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
+		6F51BBAB258AC4B10037420E /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.13;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6F51BB86258AC3090037420E /* TunesearchMockCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F51BB85258AC3090037420E /* XCRemoteSwiftPackageReference "explicitarchitecture-tunesearch-mockcore-spm" */;
+			productName = TunesearchMockCore;
+		};
+		6F51BBAC258AC4B10037420E /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F51BBAB258AC4B10037420E /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6F51BB4C258AC2D60037420E /* Project object */;
 }
